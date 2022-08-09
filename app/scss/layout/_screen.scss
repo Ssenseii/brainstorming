@@ -14,9 +14,9 @@
   grid-template-rows: repeat(var(--row-number), 1fr);
   
   &__element{
-    border: 1px solid #000;
-    border-right: 0;
-    border-bottom: 0;
+    // border: 1px solid #000;
+    // border-right: 0;
+    // border-bottom: 0;
     width: var(--grid-width);
     height: var(--grid-height);
     animation: trail 1s ease-in-out;
@@ -31,3 +31,17 @@
   }
 }
 
+
+
+@media screen and (max-width: 1000px){
+  .grid{
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+
+
+@media screen and (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
