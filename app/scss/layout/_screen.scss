@@ -1,5 +1,5 @@
 .BG{
-  background: $g-base;
+  background: #fff;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -9,14 +9,12 @@
 .grid{
   position: fixed;
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(var(--row-number), 1fr);
   
   &__element{
-    // border: 1px solid #000;
-    // border-right: 0;
-    // border-bottom: 0;
     width: var(--grid-width);
     height: var(--grid-height);
     animation: trail 1s ease-in-out;
@@ -26,6 +24,8 @@
       box-shadow: 1px 1px 8px 3px $g-light;
       transition: box-shadow 0.2s;
       animation: pop 0.1s ease-in-out;
+      z-index: 99;
+      border-radius: 10px;
     }
   }
 }
