@@ -1,15 +1,16 @@
 .screen{
   position: fixed;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: $g-base;
   z-index: -1;
 }
 
 .grid{
+  position: fixed;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
   
   &__element{
     border: 1px solid #000;
@@ -29,15 +30,3 @@
   }
 }
 
-@media screen and (max-width: 1000px){
-  .grid{
-    &__element{
-      &-tablet{
-        display: none;
-      }
-      &-phone{
-        display: none;
-      }
-    }
-  }
-}
