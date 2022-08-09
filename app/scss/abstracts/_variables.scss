@@ -1,5 +1,6 @@
 /// colors
 ///   green
 
-$g-base: #00EFA4;
-$g-dark: #0d7b59;
+$g-base:  linear-gradient(180deg, hsla(0, 0%, 0%, 1) 0%, hsl(289, 80%, 8%) 100%);;
+$g-light: lighten(#1f0425, 10%);
+$g-light-d: lighten(#1f0425, 5%);

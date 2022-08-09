@@ -2,7 +2,7 @@
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: $g-base;
+  background: $g-base;
   z-index: -1;
 }
 
@@ -23,10 +23,9 @@
 
     &:hover{
       cursor: pointer;
-      box-shadow: 5px 5px 4px 3px $g-dark;
+      box-shadow: 1px 1px 8px 3px $g-light;
       transition: box-shadow 0.2s;
-      animation: pop 0.2s ease-in-out;
-      
+      animation: pop 0.1s ease-in-out;
     }
   }
 }

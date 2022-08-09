@@ -1,18 +1,20 @@
-@keyframes pop{
-  from{
+@keyframes pop {
+  from {
     box-shadow: none;
   }
 
-  to{
-    box-shadow: 5px 5px 4px 3px $g-dark;
+  to {
+    box-shadow: 1px 1px 8px 3px $g-light;
   }
 }
 
-@keyframes trail{
-  from{
-    box-shadow: 5px 5px 4px 3px $g-dark;
+@keyframes trail {
+  from {
+    box-shadow: 1px 1px 8px 3px $g-light;
+    transform: scale(1);
   }
-  to{
+  to {
     box-shadow: none;
+    transform: scale(0);
   }
 }
