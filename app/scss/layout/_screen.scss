@@ -8,9 +8,10 @@
 
 .grid{
   position: fixed;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(15, 1fr);
+  grid-template-rows: repeat(var(--row-number), 1fr);
   
   &__element{
     border: 1px solid #000;
