@@ -1,0 +1,43 @@
+.screen{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $g-base;
+  z-index: -1;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  
+  &__element{
+    border: 1px solid #000;
+    border-right: 0;
+    border-bottom: 0;
+    width: var(--grid-width);
+    height: var(--grid-height);
+    animation: trail 1s ease-in-out;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 5px 5px 4px 3px $g-dark;
+      transition: box-shadow 0.2s;
+      animation: pop 0.2s ease-in-out;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .grid{
+    &__element{
+      &-tablet{
+        display: none;
+      }
+      &-phone{
+        display: none;
+      }
+    }
+  }
+}

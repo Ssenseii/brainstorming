@@ -1,0 +1,18 @@
+@keyframes pop{
+  from{
+    box-shadow: none;
+  }
+
+  to{
+    box-shadow: 5px 5px 4px 3px $g-dark;
+  }
+}
+
+@keyframes trail{
+  from{
+    box-shadow: 5px 5px 4px 3px $g-dark;
+  }
+  to{
+    box-shadow: none;
+  }
+}
