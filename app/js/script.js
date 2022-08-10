@@ -15,12 +15,12 @@ let gridWidth = winWidth / 20;
 
 let gridElement = document.getElementById("element");
 
+
 gridElement.style.setProperty('--grid-width', gridWidth + "px")
 gridElement.style.setProperty('--grid-height', gridHeight + "px")
 
 /// adding and appending
-let row = 
-    `<div class="grid__element"></div>
+let row = `<div class="grid__element"></div>
     <div class="grid__element"></div >
     <div class="grid__element"></div>
     <div class="grid__element"></div>
