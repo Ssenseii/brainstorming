@@ -43,7 +43,10 @@
     font-size: 150px;
     color: #fff;
     text-align: center;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 4px rgb(53, 53, 53);
+    position: fixed;
+    z-index: 10;
+    
   }
 
   &__text > span{
