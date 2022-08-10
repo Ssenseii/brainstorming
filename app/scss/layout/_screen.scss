@@ -25,9 +25,29 @@
       cursor: pointer;
       box-shadow: 5px 5px 4px 3px $g-dark;
       transition: box-shadow 0.2s;
-      animation: pop 0.2s ease-in-out;
+      animation: pop 0.2s ease-in-out, heartbeat 0.5s infinite;
       
     }
+  }
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__text{
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, arial,
+  sans-serif;
+    font-size: 150px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000;
+  }
+
+  &__text > span{
+    color: $g-dark;
   }
 }
 
@@ -36,6 +56,15 @@
 @media screen and (max-width: 1000px){
   .grid{
     grid-template-columns: repeat(10, 1fr);
+    &__element{
+      width: calc(var(--grid-width) * 2);
+    }
+  }
+
+  .title{
+    &__text{
+      font-size: 100px;
+    }
   }
 }
 
@@ -43,5 +72,15 @@
 @media screen and (max-width: 500px){
   .grid{
     grid-template-columns: repeat(5, 1fr);
+    &__element{
+      width: calc(var(--grid-width) * 4);
+    }
+  }
+
+  
+  .title{
+    &__text{
+      font-size: 72px;
+    }
   }
 }
