@@ -23,11 +23,34 @@
       cursor: pointer;
       box-shadow: 1px 1px 8px 3px $g-light;
       transition: box-shadow 0.2s;
-      animation: pop 0.1s ease-in-out;
+      animation: pop 0.1s ease-in-out, heartbeat 0.7s infinite;
       z-index: 99;
       border-radius: 10px;
+
+
+      &:before{
+        width: var(--grid-width);
+      height: var(--grid-height);
+      border: 1px solid;
+      }
+      
     }
   }
+}
+
+.Title{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: Helvetica, sans-serif;
+  font-size: 81px;
+
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
+
+  
 }
 
 
