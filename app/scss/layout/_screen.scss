@@ -1,4 +1,4 @@
-.screen{
+.screen {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -6,14 +6,14 @@
   z-index: -1;
 }
 
-.grid{
+.grid {
   position: fixed;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(var(--row-number), 1fr);
-  
-  &__element{
+
+  &__element {
     // border: 1px solid #000;
     // border-right: 0;
     // border-bottom: 0;
@@ -21,68 +21,64 @@
     height: var(--grid-height);
     animation: trail 1s ease-in-out;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
       box-shadow: 5px 5px 4px 3px $g-dark;
       transition: box-shadow 0.2s;
       animation: pop 0.2s ease-in-out, heartbeat 0.5s infinite;
-      
+      ///heart
+      /// position: relative;
     }
   }
 }
 
-.title{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
-  &__text{
+  &__text {
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, arial,
-  sans-serif;
+      sans-serif;
     font-size: 150px;
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 4px rgb(53, 53, 53);
     position: fixed;
     z-index: 10;
-    
   }
 
-  &__text > span{
+  &__text > span {
     color: $g-dark;
   }
 }
 
-
-
-@media screen and (max-width: 1000px){
-  .grid{
+@media screen and (max-width: 1000px) {
+  .grid {
     grid-template-columns: repeat(10, 1fr);
-    &__element{
+    &__element {
       width: calc(var(--grid-width) * 2);
     }
   }
 
-  .title{
-    &__text{
+  .title {
+    &__text {
       font-size: 100px;
     }
   }
 }
 
-
-@media screen and (max-width: 500px){
-  .grid{
+@media screen and (max-width: 500px) {
+  .grid {
     grid-template-columns: repeat(5, 1fr);
-    &__element{
+    &__element {
       width: calc(var(--grid-width) * 4);
     }
   }
 
-  
-  .title{
-    &__text{
+  .title {
+    &__text {
       font-size: 72px;
     }
   }
