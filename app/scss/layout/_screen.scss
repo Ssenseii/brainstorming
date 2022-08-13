@@ -12,6 +12,7 @@
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   grid-template-rows: repeat(var(--row-number), 1fr);
+  z-index: 10;
 
   &__element {
     // border: 1px solid #000;
@@ -46,7 +47,7 @@
     text-align: center;
     text-shadow: 1px 1px 4px rgb(53, 53, 53);
     position: fixed;
-    z-index: 10;
+    z-index: 5;
   }
 
   &__text > span {
