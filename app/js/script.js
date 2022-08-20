@@ -38,7 +38,7 @@ let row = `<div class="grid__element"></div>
 
 /// changing number of grid rows
     let grid = document.getElementById("grid");
-    let rowNumber = Math.round(i)
+    let rowNumber = Math.floor(i)
     grid.style.setProperty('--row-number', rowNumber + 1)
 
 
