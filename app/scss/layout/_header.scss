@@ -1,0 +1,37 @@
+.header{
+  height: 30vh;
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  font-family: 'Inter';
+  
+  &__title{
+    margin-bottom: 4rem;
+
+    font-size: 48px;
+    font-weight: 300;
+
+    letter-spacing: 2;
+  }
+
+  &__info{
+    display: flex;
+    flex-flow: row nowrap;
+
+    &-author{
+      margin-right: 10rem;
+      font-weight: 200;
+    }
+
+    &-author > span{
+      font-style: italic;
+    }
+
+    &-date{
+      font-weight: 200;
+    }
+  }
+}

@@ -27,8 +27,8 @@
       box-shadow: 5px 5px 4px 3px $g-dark;
       transition: box-shadow 0.2s;
       animation: pop 0.2s ease-in-out, heartbeat 0.5s infinite;
-      ///heart
-      /// position: relative;
+      background-color: white;
+      border: 1px solid #000;
     }
   }
 }
