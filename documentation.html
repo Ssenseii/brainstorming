@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
   <title>Heartbeat | Documentation</title>
   <link href="assets/fonts/Inter/stylesheet.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="dist/style.css">
@@ -19,9 +22,55 @@
 
   <main class="main">
     <section class="main__s1">
-      <h1 class="main__s1-title"></h1>
-      <p class="main__s1-paragraph"></p>
+      <h1 class="main__s1-title">I. Introduction:</h1>
+      <p class="main__s1-paragraph">
+        I didn't start with building a responsive grid system. Matter of fact, I didn't even have responsivity in mind. I was thinking about a way to turn sections of the page into 3D objects. <br>
+        
+        hovering above an element with your mouse would make it 3D, by appplying a drop-shadow & lighter background-color to the element.<br>
+        <br>
+
+        Luckily, When I got back home and started working on it. <br>
+        It worked just as I intended <br>
+        <br>
+        
+        Hovering would make the element appear 3D by being lighter than the rest and having a minimal drop-shadow on the left + the added benefit of having a trail animation made the grid element rise and fall gracefully. <br>
+        <br>
+        
+        There was a problem though. <br>
+        <br>
+
+        While reviewing and playing with the grid system: tuning the colors and drop shadow. <br>
+        I tried moving the browser to another monitor for better inspection. <br>
+        That's when I realised My original javascript function had only one screen width in mind, <br>
+        I never thought about the other screen types, and how they would react to my grid. <br>
+        <br>
+
+        That's when I set out to write, what at first seemed to be a fairly simple function, my bane for a couple of hours, <br>
+        and the reason I began to hate the "height" property ever since.
+      </p>
     </section>
+
+    <section class="main__s2">
+      <h1 class="main__s2-title">II. Plan</h1>
+      <ol class="main__s2-ol">
+        <li class="main__s2-ol-li">Make the grid container calcultate the width and height of the window.</li> 
+        <li class="main__s2-ol-li">Make the grid element's width and height equal to the size of the window, devided by the number of grid elements there is.</li> 
+        <li class="main__s2-ol-li">Add enough grid element rows to fill the whole page</li> 
+        <li class="main__s2-ol-li">Apply changes every time the page resizes</li> 
+      </ol>
+    </section>
+
+    <section class="main__s3">
+      <h1 class="main__s3-title">3. Code Explanation</h1>
+      <h2 class="main__s3-subtitle">3.1 - HTML</h2>
+      
+    </section>
+
+    <!-- 
+    <section class="main__s2">
+      <h1 class="main__s2-title"></h1>
+      <p class="main__s2-paragraph"></p>
+    </section> -->
   </main>
 </body>
-</html>
+</htm
