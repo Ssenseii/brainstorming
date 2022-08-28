@@ -1,22 +1,4 @@
-@mixin section {
-  width: 50%;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
-  border-left-style: dotted;
-  border-right-style: dotted;
-
-  display: flex;
-  flex-flow: column nowrap;
-
-  padding-top: 2rem;
-  padding-inline: 4rem;
-
-  padding-bottom: 4rem;
-}
-
-@mixin title {
-  font-weight: 200;
-  font-size: 32px;
-
-  margin-bottom: 2rem;
+@mixin Eye{
+  border-radius: 50%;
+  background-color: #000;
 }

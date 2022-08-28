@@ -53,11 +53,6 @@ let gridElement = document.getElementsByClassName("grid__element");
 for (var index = 0 ; index < gridElement.length ; index++){  
   gridElement[index].style.setProperty('--grid-width', gridWidth + "px")
   gridElement[index].style.setProperty('--grid-height', gridHeight + "px")
-
-  gridElement[index].addEventListener("click", function () {
-    window.open("documentation.html", '_blank')
-    
-  })
 }
 
     /// height update issue resolved using this code
@@ -77,7 +72,3 @@ console.log( "gridWidth " + gridWidth)
 console.log("i =" + i)
 console.log("row Number =" + rowNumber)
 
-
-gridElement.addEventListener("click", function(){
-  alert("clicked");
-})
